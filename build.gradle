@@ -14,6 +14,15 @@ configurations {
 	}
 }
 
+
+////////////////////////////////////////////////////////////
+//Thanks to this we don't have to write "@Param" every time.
+compileJava{
+	options.compilerArgs << '-parameters'
+}
+////////////////////////////////////////////////////////////
+
+
 repositories {
 	mavenCentral()
 }
